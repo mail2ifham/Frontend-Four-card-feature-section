@@ -29,10 +29,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .heading {
+  /* border: 5px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,17 +100,14 @@ footer {
   text-align: center;
 }
 
-
-
-
-
 @media (min-width: 1150px) {
   body {
     font-family: "Poppins", sans-serif;
   }
   .card-container {
-    width: 1250px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
     justify-content: center;
   }
@@ -118,11 +115,5 @@ footer {
   .card {
     width: 300px;
     height: 200px;
-  }
-  .mid-card > .card {
-    margin: 30px;
-  }
-  .heading >p {
-    width: 60%;
   }
 }
